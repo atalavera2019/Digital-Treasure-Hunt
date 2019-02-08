@@ -15,11 +15,18 @@ h1{
   margin-right: auto;
   width: 50%;
 }
+#hiddenPic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 </style></head>    
     <body>
         <h1>Digital Treasure Hunt</h1>
         <img id="money" src="https://i.pinimg.com/236x/bc/7a/99/bc7a99c521a867bbd230b15f2108d792--money-pics-how-to-earn-money.jpg">
-        <button>Click Here!</button>
+        <button>Double Click Here!</button>
         <p id="Message3">Now click here!</p>
         <p id="Message"></p>
         <p id="Message2"></p>
@@ -32,14 +39,12 @@ h1{
 $("#hiddenPic").hide();
 $(".yay").hide();
 
-$("button").click(function(){
-    $("#Message").append("Double click here");
+$("button").dblclick(function(){
+    $("#Message").append("Now Click Here!");
 });
-
-$("#Message").dblclick(function(){
+$("#Message").click(function(){
     $("#hiddenPic").show();
-    $("#Message");
-
+    $("#Message").text("Touch the coins");
 });
 $("#hiddenPic").hover(function(){
     $("#Message").text("Now click on the bag");
@@ -47,7 +52,7 @@ $("#hiddenPic").hover(function(){
 $("#money").click(function(){
     $("body").css("background", "#25E18F");
 });
-$("h1").click(function(){
+$("#money").click(function(){
     $("p").hide();
     $("img").hide();
     $("button").hide();
