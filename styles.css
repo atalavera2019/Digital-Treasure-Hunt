@@ -1,0 +1,13 @@
+#Message3{
+    color:white;   
+    text-align:center;
+}
+h1{
+    text-align:center;
+}
+#money {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
