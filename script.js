@@ -1,14 +1,12 @@
 $("#hiddenPic").hide();
 $(".yay").hide();
 
-$("button").click(function(){
-    $("#Message").append("Double click here");
+$("button").dblclick(function(){
+    $("#Message").append("Now Click Here!");
 });
-
-$("#Message").dblclick(function(){
+$("#Message").click(function(){
     $("#hiddenPic").show();
-    $("#Message");
-
+    $("#Message").text("Touch the coins");
 });
 $("#hiddenPic").hover(function(){
     $("#Message").text("Now click on the bag");
@@ -16,7 +14,7 @@ $("#hiddenPic").hover(function(){
 $("#money").click(function(){
     $("body").css("background", "#25E18F");
 });
-$("h1").click(function(){
+$("#money").click(function(){
     $("p").hide();
     $("img").hide();
     $("button").hide();
